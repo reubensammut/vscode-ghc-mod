@@ -15,6 +15,9 @@ To get the application running, clone the whole repository and run `npm install`
 ## Debugging the extension
 After running the extension as explained above, press `F5` in a seperate instance of VS Code that has the `server` directory open. This will attach the debugger to the extension host.
 
+### First time debugging the extension
+When debugging the extension for the first time, you will find that the `client/server` folder is not present. To create this press `Ctrl+Shift+B` (or `Cmd+Shift+B` for Mac) which compiles and copies the server code into the client folder.
+
 ## Testing the extension
 ### Mocha test runner via npm
 `npm test` from the server directory will run tests against the most recently compiled version of the code. The test command does NOT currently build the application.
